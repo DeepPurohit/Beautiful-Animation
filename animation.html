@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background: #f5f6f6;
+			background: linear-gradient(to bottom, #f9f9f9 0%, #c4c4c4 100%) fixed;
+			border-top: 3px solid pink;
+
+		}
+		div#wrapper{
+			margin-top: 10%;
+			width: 100%;
+			height: auto;
+			display: -webkit-box;
+			-webkit-box-pack: center;
+			-webkit-box-orient: horizontal;
+		}
+
+		div#head{
+			margin-top:30%;
+			text-align: center;
+			font-family: 'Pacifico', cursive, sans-serif;
+			top: 20px;
+			color: #0d67a3;
+			margin: 30px;
+			font-size: 2.6em;
+			text-shadow: 7px 3px 7px rgba(0,0,0,0.2);
+		}
+
+		div.box{
+			width: 198px;
+			height: 198px;
+			border: 5px solid #fff;
+			border-radius: 100px;
+			margin-right: 8px;
+			overflow: hidden;
+			box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+			position: relative;
+		}
+
+		div.box img{
+			border-radius: 100px;
+		}
+
+		div.box div{
+			width: 200px;
+			height: 105px;
+			background: #000;
+			color: #fff;
+			text-align: center;
+			border-radius: 100px;
+			padding: 95px 0 0 0;
+		}
+
+		div.pic1{
+			top: 0px;
+			left:0px;
+		}
+
+		div#pic2{float: right; right: 0px; top: 0px;}
+		div.pic1 div{
+			position: absolute;
+			top:0;
+			left: 0;
+			opacity: 0;
+			transition: opacity 700ms;
+			color: #fff;
+		}
+
+		div.pic1 div:hover{
+			opacity: 0.8;
+		}
+
+		div#pic2 img{
+			position: absolute;
+			top:0;
+			left: 0;
+			transition: margin-left 700ms;
+			color: white;
+		}
+
+		div#pic2:hover img{
+			margin-left: 200px;
+		}
+
+		div#pic3 img{
+			position: absolute;
+			top:0;
+			left: 0;
+		}
+
+		div#pic3 div{
+			opacity: 0.8;
+			transform: scale(0);
+			transition: transform 800ms;
+
+		}
+
+		div#pic3:hover div{
+			transform: scale(1);
+		}
+
+		div#pic4 img{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		div#pic4 div{
+			opacity: 0;
+			transform: translateX(-200px);
+			transition: transform 800ms;
+			color: white;
+		}
+
+		div#pic4:hover div{
+			opacity: 0.8;
+			transform: translateX(0px);
+		}
+
+		div#pic5 img{
+			position: absolute;
+			top:0;
+			left: 0;
+		}
+
+		div#pic5 img{
+
+			transform: scale(1);
+			transition: transform 800ms;
+
+		}
+
+		div#pic5:hover img{
+			transform: scale(0);
+		}
+
+		div#pic6 img{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		div#pic6 div{
+			opacity: 0;
+			transition: transform linear 900ms;
+		}
+
+		div#pic6:hover div{
+			opacity: 0.9;
+			transform: rotateX(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div id="head"><h2>Beautiful Animations</h2></div>
+	<div id="wrapper">
+		<div class="box pic1">
+			<img src="a.jpg" alt="picture" width="200px" height="200px"/>
+			<div class="text">Awesome</div>
+		</div>
+		<div class="box" id="pic2">
+			<img src="b.jpg" alt="picture" width="200px" height="200px"/>
+			<div class="text">Beautiful</div>
+		</div>
+		<div class="box" id="pic3">
+			<img src="c.jpg" alt="picture" width="200px" height="200px"/>
+			<div class="text">Attractive</div>
+		</div>
+		<div class="box" id="pic4">
+			<img src="d.jpg" alt="picture" width="200px" height="200px"/>
+			<div class="text">Mind Blowing</div>
+		</div>
+		<div class="box" id="pic5">
+			<img src="e.jpg" alt="picture" width="200px" height="200px"/>
+			<div class="text">Superb</div>
+		</div>
+		<div class="box" id="pic6">
+			<img src="f.jpg" alt="picture" width="200px" height="200px"/>
+			<div class="text">Fantastic</div>
+		</div>
+	</div>
+</body>
+</html>
